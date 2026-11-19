@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👤 Meu Perfil Acessível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Atalho de acessibilidade para navegação via teclado -->
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para o conteúdo principal</a>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <div class="container">
+      <h1>👤 Meu Perfil Acessível</h1>
+      <p class="subtitulo">Conheça um pouco sobre este estudante.</p>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="conteudo-principal" class="container">
+
+    <!-- Cartão de Perfil -->
+    <section class="cartao-perfil" aria-labelledby="titulo-perfil">
+      <img
+        class="avatar"
+        src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><circle cx='80' cy='80' r='80' fill='%23E2E8F0'/><path d='M35 150 C35 118, 125 118, 125 150' fill='%231E3A8A'/><rect x='70' y='96' width='20' height='22' rx='8' fill='%23FDBA74'/><circle cx='80' cy='72' r='32' fill='%23FDBA74'/><path d='M48 68 C48 40, 112 40, 112 68 C106 54, 54 54, 48 68 Z' fill='%231E293B'/><circle cx='69' cy='72' r='3.5' fill='%231E293B'/><circle cx='91' cy='72' r='3.5' fill='%231E293B'/><path d='M71 85 Q80 92 89 85' stroke='%231E293B' stroke-width='3' fill='none' stroke-linecap='round'/></svg>"
+        alt="Avatar do estudante"
+      >
+
+      <div class="dados-estudante">
+        <h2 id="titulo-perfil">Informações do Estudante</h2>
+        <ul class="lista-dados">
+          <li><strong>Nome:</strong> João</li>
+          <li><strong>Idade:</strong> 16 anos</li>
+          <li><strong>Curso:</strong> Técnico em Desenvolvimento de Sistemas</li>
+          <li><strong>Interesses:</strong> Tecnologia, jogos e música</li>
+          <li><strong>Objetivo:</strong> Aprender programação</li>
+        </ul>
+
+        <div class="area-botao">
+          <a href="#detalhes" class="botao">📋 Ver informações completas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards de Informações: "Eu gosto" e "Como eu aprendo melhor?" -->
+    <section id="detalhes" class="grid-cards" aria-label="Preferências e forma de aprendizagem">
+
+      <!-- Card: Eu gosto -->
+      <article class="card">
+        <h2>Eu gosto de...</h2>
+        <ul class="lista-itens">
+          <li>🎮 Jogos</li>
+          <li>🎵 Música</li>
+          <li>💻 Computadores</li>
+          <li>⚽ Esportes</li>
+          <li>📚 Tecnologia</li>
+        </ul>
+      </article>
+
+      <!-- Card: Como eu aprendo melhor? -->
+      <article class="card">
+        <h2>Como eu aprendo melhor?</h2>
+        <p class="destaque-aprendizagem">📖 Aprendo melhor quando:</p>
+        <ul class="lista-itens">
+          <li>As instruções são claras.</li>
+          <li>As atividades estão organizadas.</li>
+          <li>Tenho exemplos.</li>
+          <li>Sei o que preciso fazer.</li>
+          <li>As informações estão divididas em etapas.</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <!-- Seção: Minha Rotina -->
+    <section class="secao-rotina" aria-labelledby="titulo-rotina">
+      <h2 id="titulo-rotina">Minha rotina</h2>
+      <p>Organização das atividades principais do dia:</p>
+
+      <table class="tabela-rotina">
+        <thead>
+          <tr>
+            <th scope="col">Horário</th>
+            <th scope="col">Atividade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>07:00</td>
+            <td>Acordar</td>
+          </tr>
+          <tr>
+            <td>08:00</td>
+            <td>Escola</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td>Almoço</td>
+          </tr>
+          <tr>
+            <td>13:30</td>
+            <td>Estudos</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Meu Perfil Acessível — Desenvolvido com HTML5 e CSS3.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
